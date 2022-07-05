@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personle Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 id= "home" class="logo">PORTFO<span>LIO</span></h2>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+                
+            </ul>
+        </nav>
+        <div  class="detel">
+            <h1>I am Agrima <span>Sharma</span></h1>
+            <p>Developer,<br>Artist.<br>
+            I am a developer with a pinch of designing skills. </p>
+            <a class= "button" href="Agrima Sharma (1).pdf">Download CV</a>
+        </div>
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/my.png" class="girl">
+        </div>
+
+        <div class="social">
+           <a href="https://www.facebook.com/agrima.sharma.1671/"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="https://github.com/agrima1234"><i class="fab fa-github"></i></a>
+           <a href="https://www.linkedin.com/in/agrima-sharma-84760b1a9/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!--------about section-------->
+    <section id="about" class="about">
+        <div class="main">
+            <img src="images/IMG-20211023-WA0009.jpg" alt="">
+            <div class="about-text">
+                <h2>About <span> Me </span></h2>
+                <h5>Developer and Designer</h5>
+                <p>I am a Third year graduate in Computer Science and Engineering at Dr.A.P.J Abdul Kalam Technical University specializing in Software Development. Having a strong passion for innovation with software, I have relevant programming skill along with a driven attitude.<br>
+                Proficient in programming languages like Java and C++, I also have prior experience of working with JavaScript, HTML, CSS, MySQL, etc. and familiarity with frameworks such as jUnit, Swing and awt etc.I have cultivated a thorough understanding of web development and object-oriented programming.I believe in constantly improving myself by expanding my horizons and focussing on value creation.<br>
+                Moreover, I believe I am versatile and easily adapt to new environments, a self-motivated and hardworking person with a positive attitude towards my career and my life. I focus on establishing a good connection with people and mutual understanding. I always look forward to grow and improve myself both personally and professionally. 
+                </p>
+                    
+    
+            </div>
+        </div>
+    </section>
+
+    <!------skills------->
+
+    <section id = "skills" class="skills">
+        <div class = title>
+           <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class ="box">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h5>CODE EXPERTISE</h5>
+                <div class="pra">
+                    <p>I am proficient in programming languages like Java, C, C++, and know the basics of Python. I am also good at data structures and problem solving.”</p>
+                   
+                </div>
+            </div>
+
+            <div class ="box">
+                <div class="card">
+                    <i class = "fas fa-hands"></i>
+                    <h5>DESIGNING AND TOOLS</h5>
+                    <div class="pra">
+                        <p>I have experience of working with HTML, CSS, MySQL and familiarity with frameworks like AWT, Swing etc for frontend using Java.</p>
+                        
+                    </div>
+                </div>
+                <div class ="box">
+                    <div class="card">
+                        <i class="fas fa-user"></i>
+                        <h5>QUALITY</h5>
+                        <div class="pra">
+                            <p>I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. I thrive on challenge and constantly set goals for myself.</p>
+                            
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+<!-------Contact Me-->
+<section id = "contact" class = "contact">
+<p class="hii">Actively looking for full-time job opportunities as an Entry-Level Software Engineer.</p>
+<a href="mailTo:agrima.sharma1301@gmail.com" class = "button-two" >Contact Me</a>
+</section>
+
+<!----------footer start----------->
+<footer>
+    <p class="start">
+        Agrima Sharma
+    </p>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com/agrima.sharma.1671/"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/agrima1234"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/agrima-sharma-84760b1a9/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="end">Copyright By Agrima Sharma</p>
+</footer>
+
+<script>
+    ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 300
+    });
+
+    ScrollReveal().reveal('.detel, .social,.images, .main, .title, .p, .button-two, .start, .end, .hii, .box, .socialmedia', {delay: 500});
+</script>
+</body>
+</html>
